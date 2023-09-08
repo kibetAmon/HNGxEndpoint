@@ -7,7 +7,7 @@ import calendar
 def endpointview(request):
     today = date.today()
     data = {
-        'slack_name': 'Amon Kibet',
+        'slack_name': 'Amon_Kibet',
         'current_day':calendar.day_name[today.weekday()],
         'utc_time': datetime.now(timezone.utc),
         'track':'Backend',
