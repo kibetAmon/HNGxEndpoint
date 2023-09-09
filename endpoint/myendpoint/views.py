@@ -13,7 +13,7 @@ def endpointview(request):
         'utc_time': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         'track': 'backend',
         'github_file_url': 'https://github.com/kibetAmon/HNGxEndpoint/blob/master/endpoint/myendpoint/views.py',
-        'github_file_repo': 'https://github.com/kibetAmon/HNGxEndpoint',
+        'github_repo_url': 'https://github.com/kibetAmon/HNGxEndpoint',
         'status_code': 200
     }
     response = JsonResponse(data, status=200)
