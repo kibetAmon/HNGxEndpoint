@@ -10,7 +10,7 @@ def endpointview(request):
     data = {
         'slack_name': 'Amon_Kibet',
         'current_day': calendar.day_name[today.weekday()],
-        'utc_time': datetime.now(timezone.utc),
+        'utc_time': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         'track': 'backend',
         'github_file_url': 'https://github.com/kibetAmon/HNGxEndpoint/blob/master/endpoint/myendpoint/views.py',
         'github_file_repo': 'https://github.com/kibetAmon/HNGxEndpoint',
